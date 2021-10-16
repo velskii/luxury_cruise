@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">A2</string>
+
+    <string name="bahamas">Bahamas Cruise</string>
+    <string name="caribbean">Caribbean Cruise</string>
+    <string name="cuba">Cuba Cruise</string>
+    <string name="sampler">Sampler Cruise</string>
+    <string name="star">Star Cruise</string>
+
+
+    <string name="visiting_places">Visiting places:</string>
+    <string name="cruise_price">Cruise price:</string>
+    <string name="duration">duration(number of nights):</string>
+    <string name="image">image</string>
+
+    <string name="visiting_places_bahamas">Visiting places: Bahamas</string>
+    <string name="cruise_price_bahamas">Cruise price: 6666 $</string>
+    <string name="duration_bahamas">duration(number of nights): 6</string>
+
+    <string name="visiting_places_caribbean">Visiting places: Caribbean</string>
+    <string name="cruise_price_caribbean">Cruise price: 777 $</string>
+    <string name="duration_caribbean">duration(number of nights): 7</string>
+
+    <string name="visiting_places_cuba">Visiting places: Cuba</string>
+    <string name="cruise_price_cuba">Cruise price: 8888 $</string>
+    <string name="duration_cuba">duration(number of nights): 8</string>
+
+    <string name="visiting_places_sampler">Visiting places: Sampler</string>
+    <string name="cruise_price_sampler">Cruise price: 9999 $</string>
+    <string name="duration_sampler">duration(number of nights): 9</string>
+
+    <string name="visiting_places_star">Visiting places: Star</string>
+    <string name="cruise_price_star">Cruise price: 5555 $</string>
+    <string name="duration_star">duration(number of nights): 5</string>
+
+    <string name="adults_number">number of adults:</string>
+    <string name="children_number">number of children:</string>
+
+    <string name="group_information">Is anyone travelling over the age of 60?</string>
+
+</resources>

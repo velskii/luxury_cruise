@@ -1,0 +1,43 @@
+package com.example.a2
+
+import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
+import android.content.SharedPreferences
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.view.View
+import android.widget.TextView
+
+class CheckoutActivity : AppCompatActivity() {
+    lateinit var sharedPreferences: SharedPreferences
+
+    @SuppressLint("SetTextI18n")
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_checkout)
+
+        sharedPreferences = this.getSharedPreferences("com.example.a2", Context.MODE_PRIVATE)
+
+        val cruise_type_checked = sharedPreferences.getString("cruise_type_checked", "").toString()
+        val price = sharedPreferences.getString("price", "").toString()
+        val visiting_places = sharedPreferences.getString("visiting_places", "").toString()
+        val duration = sharedPreferences.getString("duration", "").toString()
+        val numberOfAdults = sharedPreferences.getString("numberOfAdults", "").toString()
+        val numberOfChildren = sharedPreferences.getString("numberOfChildren", "").toString()
+        val senior_guest = sharedPreferences.getBoolean("senior_guest", false).toString()
+
+        findViewById<TextView>(R.id.cruise_type_checked).text = cruise_type_checked
+        findViewById<TextView>(R.id.price_stored).text = price
+        findViewById<TextView>(R.id.visiting_places_stored).text = visiting_places
+        findViewById<TextView>(R.id.duration_stored).text = duration
+        findViewById<TextView>(R.id.number_adults).text = "number of adults: $numberOfAdults"
+        findViewById<TextView>(R.id.number_children).text = "number of children: $numberOfChildren"
+        findViewById<TextView>(R.id.senior_guest).text = "anyone over the age of 60: $senior_guest"
+
+    }
+    fun payOptions(v:View){
+        val i = Intent(this@CheckoutActivity, PayOptionsActivity::class.java)
+        startActivity(i);
+    }
+}
