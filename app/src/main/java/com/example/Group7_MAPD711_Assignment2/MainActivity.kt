@@ -4,7 +4,7 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

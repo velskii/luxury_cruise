@@ -4,7 +4,7 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.content.Context
 import android.content.Intent
@@ -34,7 +34,7 @@ class CruiseTypesActivity : AppCompatActivity() {
     }
     fun chooseMembers(v:View){
         val cruiseTypeCheckBox = findViewById<CheckBox>(R.id.cruise_type)
-        sharedPreferences = this.getSharedPreferences("com.example.a2", Context.MODE_PRIVATE)
+        sharedPreferences = this.getSharedPreferences("com.example.Group7_MAPD711_Assignment2", Context.MODE_PRIVATE)
 
         if(cruiseTypeCheckBox.isChecked)
         {

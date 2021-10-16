@@ -4,15 +4,13 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
@@ -27,7 +25,7 @@ class PersonalInformationActivity : AppCompatActivity() {
     }
     fun job_done(v:View){
         var errorInfo : String = ""
-        sharedPreferences = this.getSharedPreferences("com.example.a2", Context.MODE_PRIVATE)
+        sharedPreferences = this.getSharedPreferences("com.example.Group7_MAPD711_Assignment2", Context.MODE_PRIVATE)
 
         val full_name = findViewById<EditText>(R.id.full_name).text.toString()
         val address = findViewById<EditText>(R.id.address).text.toString()

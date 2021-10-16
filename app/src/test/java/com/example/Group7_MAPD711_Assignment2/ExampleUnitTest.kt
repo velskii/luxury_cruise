@@ -1,4 +1,4 @@
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import org.junit.Test
 

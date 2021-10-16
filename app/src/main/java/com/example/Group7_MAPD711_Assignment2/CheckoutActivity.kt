@@ -4,7 +4,7 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.annotation.SuppressLint
 import android.content.Context
@@ -23,7 +23,7 @@ class CheckoutActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_checkout)
 
-        sharedPreferences = this.getSharedPreferences("com.example.a2", Context.MODE_PRIVATE)
+        sharedPreferences = this.getSharedPreferences("com.example.Group7_MAPD711_Assignment2", Context.MODE_PRIVATE)
 
         val cruise_type_checked = sharedPreferences.getString("cruise_type_checked", "").toString()
         val price = sharedPreferences.getString("price", "").toString()

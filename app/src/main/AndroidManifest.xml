@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.a2">
+    package="com.example.Group7_MAPD711_Assignment2">
 
     <application
         android:allowBackup="true"
@@ -10,25 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme1">
         <activity
-            android:name=".SummaryActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.SummaryActivity"
             android:exported="true" />
         <activity
-            android:name=".PersonalInformationActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.PersonalInformationActivity"
             android:exported="true" />
         <activity
-            android:name=".PayOptionsActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.PayOptionsActivity"
             android:exported="true" />
         <activity
-            android:name=".CheckoutActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.CheckoutActivity"
             android:exported="true" />
         <activity
-            android:name=".MembersActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.MembersActivity"
             android:exported="true" />
         <activity
-            android:name=".CruiseTypesActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.CruiseTypesActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.Group7_MAPD711_Assignment2.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

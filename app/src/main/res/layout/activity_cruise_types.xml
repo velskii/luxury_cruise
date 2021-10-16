@@ -13,7 +13,7 @@
         tools:ignore="MissingConstraints">
     <fragment
         android:id="@+id/bahamas"
-        android:name="com.example.a2.BahamasFragment"
+        android:name="com.example.Group7_MAPD711_Assignment2.BahamasFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
     </LinearLayout>

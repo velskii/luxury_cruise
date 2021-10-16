@@ -4,7 +4,7 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,14 +12,14 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-class StarFragment : Fragment() {
+class CubaFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_star, container, false)
+        return inflater.inflate(R.layout.fragment_cuba, container, false)
     }
 
 }

@@ -4,14 +4,13 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Patterns
 import android.view.View
 import android.widget.*
 
@@ -25,7 +24,7 @@ class MembersActivity : AppCompatActivity() {
     }
 
     fun summary_info(v:View){
-        sharedPreferences = this.getSharedPreferences("com.example.a2", Context.MODE_PRIVATE)
+        sharedPreferences = this.getSharedPreferences("com.example.Group7_MAPD711_Assignment2", Context.MODE_PRIVATE)
 
         val spin1 = findViewById<View>(R.id.adults_spinner) as Spinner
         val spin2 = findViewById<View>(R.id.children_spinner) as Spinner

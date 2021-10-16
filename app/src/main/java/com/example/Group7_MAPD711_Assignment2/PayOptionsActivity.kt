@@ -4,20 +4,15 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.InputType
-import android.text.TextWatcher
-import android.util.Patterns
 import android.view.View
 import android.widget.EditText
 import android.widget.Toast
 import java.util.regex.Pattern
-import kotlin.math.exp
 
 class PayOptionsActivity : AppCompatActivity() {
     var errorInfo : String = ""

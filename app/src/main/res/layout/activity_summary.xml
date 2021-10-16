@@ -98,6 +98,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/price_reverse"
         android:text=""/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your online reservation. Relax and Enjoy Your Cruise!"/>
 
 
 </LinearLayout>

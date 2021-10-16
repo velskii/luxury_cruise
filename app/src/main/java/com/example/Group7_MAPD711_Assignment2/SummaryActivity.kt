@@ -4,7 +4,7 @@
  * Quoc Phong Ngo studentId:301148406
  * Feiliang Zhou studentId:301216989
  */
-package com.example.a2
+package com.example.Group7_MAPD711_Assignment2
 
 import android.content.Context
 import android.content.SharedPreferences
@@ -18,7 +18,7 @@ class SummaryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_summary)
-        sharedPreferences = this.getSharedPreferences("com.example.a2", Context.MODE_PRIVATE)
+        sharedPreferences = this.getSharedPreferences("com.example.Group7_MAPD711_Assignment2", Context.MODE_PRIVATE)
 
         val cruise_type_checked = sharedPreferences.getString("cruise_type_checked", "").toString()
         val city_and_country = sharedPreferences.getString("city", "").toString() + "-" + sharedPreferences.getString("country", "").toString()
