@@ -48,10 +48,6 @@ class CruiseTypesActivity : AppCompatActivity() {
             sharedPreferences.edit().putString(
                 "cruise_type_checked", cruiseTypeChecked
             ).apply()
-        }
-
-        cruiseTypeChecked = sharedPreferences.getString("cruise_type_checked", "").toString()
-        if (cruiseTypeChecked != "") {
             val i = Intent(this@CruiseTypesActivity, MembersActivity::class.java)
             startActivity(i)
         } else {

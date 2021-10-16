@@ -26,11 +26,15 @@ class MembersActivity : AppCompatActivity() {
         val numberOfAdults = spin1.selectedView as TextView
         val numberOfChildren = spin2.selectedView as TextView
         val radioGroup = findViewById<View>(R.id.rd_group) as RadioGroup
-        var senior_guest:Boolean = false
-        radioGroup.setOnCheckedChangeListener { _, _ ->
-            val rb1 = findViewById<View>(R.id.rdb1) as RadioButton
-            senior_guest = rb1.isChecked
-        }
+//        var senior_guest:Boolean = false
+//        radioGroup.setOnCheckedChangeListener { _, _ ->
+//            val rb1 = findViewById<View>(R.id.rdb1) as RadioButton
+//            senior_guest = rb1.isChecked
+//        }
+        val buttonId: Int = radioGroup.checkedRadioButtonId
+
+        val selectedRadioButton: RadioButton = findViewById(buttonId)
+        val senior_guest:String = selectedRadioButton.text.toString()
 
         sharedPreferences.edit().putString(
             "numberOfAdults", numberOfAdults.text.toString()
@@ -38,7 +42,7 @@ class MembersActivity : AppCompatActivity() {
         sharedPreferences.edit().putString(
             "numberOfChildren", numberOfChildren.text.toString()
         ).apply()
-        sharedPreferences.edit().putBoolean(
+        sharedPreferences.edit().putString(
             "senior_guest", senior_guest
         ).apply()
 

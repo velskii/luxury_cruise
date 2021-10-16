@@ -17,16 +17,19 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="@dimen/normalFontSize"
+            android:id="@+id/price"
             android:text="@string/cruise_price_star" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="@dimen/normalFontSize"
+            android:id="@+id/visiting_places"
             android:text="@string/visiting_places_star" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:textSize="@dimen/normalFontSize"
+            android:id="@+id/duration"
             android:text="@string/duration_star" />
         <ImageView
             android:layout_width="wrap_content"

@@ -25,7 +25,7 @@ class CheckoutActivity : AppCompatActivity() {
         val duration = sharedPreferences.getString("duration", "").toString()
         val numberOfAdults = sharedPreferences.getString("numberOfAdults", "").toString()
         val numberOfChildren = sharedPreferences.getString("numberOfChildren", "").toString()
-        val senior_guest = sharedPreferences.getBoolean("senior_guest", false).toString()
+        val senior_guest = sharedPreferences.getString("senior_guest", "NO").toString()
 
         findViewById<TextView>(R.id.cruise_type_checked).text = cruise_type_checked
         findViewById<TextView>(R.id.price_stored).text = price

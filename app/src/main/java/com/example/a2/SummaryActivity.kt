@@ -17,7 +17,7 @@ class SummaryActivity : AppCompatActivity() {
         val cruise_type_checked = sharedPreferences.getString("cruise_type_checked", "").toString()
         val city_and_country = sharedPreferences.getString("city", "").toString() + "-" + sharedPreferences.getString("country", "").toString()
         val customer_address = sharedPreferences.getString("address", "").toString()
-        val customer_name = sharedPreferences.getString("customer_name", "").toString()
+        val customer_name = sharedPreferences.getString("full_name", "").toString()
 
         val price = sharedPreferences.getString("price", "").toString()
         val visiting_places = sharedPreferences.getString("visiting_places", "").toString()
