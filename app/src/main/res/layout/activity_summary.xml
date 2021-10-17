@@ -14,94 +14,106 @@
         android:textSize="@dimen/normalFontSize"
         android:text="Reverse Information:"/>
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Customer Name:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/customer_name"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Customer Address:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/customer_address"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="City and Country:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/city_and_country"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Type of Cruise:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/type_of_cruise"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/visiting_places_reverse"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cruise Duration:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/cruise_duration_reverse"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Number of Guests:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/number_of_guests"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Number of Nights:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/number_of_nights"
         android:text=""/>
 
     <TextView
+        style="@style/reverse_display"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Price:"/>
     <TextView
+        style="@style/reverse_display_info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/price_reverse"
         android:text=""/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Thank you for your online reservation. Relax and Enjoy Your Cruise!"/>
-
 
 </LinearLayout>
