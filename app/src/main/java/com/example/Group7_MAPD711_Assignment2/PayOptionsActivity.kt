@@ -107,6 +107,7 @@ class PayOptionsActivity : AppCompatActivity() {
 
     fun btnNext_Click(v:View)
     {
+        val textExpiryDte = findViewById<TextView>(R.id.tvExpiryDate)
         val rdbPaymentOptions = findViewById<View>(R.id.rdb_payment_options) as RadioGroup
         val rdbPaymentOptionsId: Int = rdbPaymentOptions.checkedRadioButtonId
         val intent = Intent(this@PayOptionsActivity, PersonalInformationActivity::class.java)
@@ -121,7 +122,14 @@ class PayOptionsActivity : AppCompatActivity() {
                         "Card Number must be 8 digits",
                         Toast.LENGTH_LONG
                     ).show()
-                } else {
+                } else if(textExpiryDte.text.toString().equals("--/--/----")) {
+                    Toast.makeText(
+                        this@PayOptionsActivity,
+                        "Expiry Date must not be empty",
+                        Toast.LENGTH_LONG
+                    ).show()
+                }
+                else {
 
                     startActivity(intent)
                 }
