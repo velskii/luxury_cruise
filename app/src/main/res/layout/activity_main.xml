@@ -15,10 +15,15 @@
         android:src="@drawable/cruise_logo" />
 
     <TextView
+        style="@style/small_description_style"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="20px"
+        android:layout_marginBottom="20px"
+        android:layout_marginRight="50px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="This is our luxury cruise company's logo."
+        android:text="@string/small_description"
         />
     <Button
         android:onClick="btnBook_clicked"

@@ -9,4 +9,8 @@
         <item name="android:textSize">@dimen/normalFontSize</item>
         <item name="android:textColor">@color/teal_700</item>
     </style>
+    <style name="small_description_style">
+        <item name="android:textSize">8pt</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>
