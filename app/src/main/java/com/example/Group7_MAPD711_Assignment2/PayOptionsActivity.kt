@@ -55,7 +55,7 @@ class PayOptionsActivity : AppCompatActivity() {
         val currentDate = Date()
         if(cal.getTime().before(currentDate))
         {
-            Toast.makeText(this@PayOptionsActivity, "before current date", Toast.LENGTH_LONG).show()
+            Toast.makeText(this@PayOptionsActivity, "Expiry date must be greater than today.", Toast.LENGTH_LONG).show()
         } else {
             textviewExpiryDate!!.text = sdf.format(cal.getTime())
         }
@@ -115,10 +115,10 @@ class PayOptionsActivity : AppCompatActivity() {
             val rdbCreditCardText = selectedRadioButton.text.toString()
             if (rdbCreditCardText == "Credit Card") {
                 val cardNumber = findViewById<EditText>(R.id.edit_text_credit_card)
-                if (cardNumber.text.length != 16) {
+                if (cardNumber.text.length != 8) {
                     Toast.makeText(
                         this@PayOptionsActivity,
-                        "Card Number must be 16 digits",
+                        "Card Number must be 8 digits",
                         Toast.LENGTH_LONG
                     ).show()
                 } else {
