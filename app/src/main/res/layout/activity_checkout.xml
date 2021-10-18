@@ -11,8 +11,8 @@
         android:id="@+id/cruise_type_checked"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/descriptionFontSize"
-        android:text=""/>
+        style="@style/cruise_tyle"
+        />
     <TextView
         android:id="@+id/price_stored"
         android:layout_width="wrap_content"
@@ -52,7 +52,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="clip_horizontal"
+        android:layout_gravity="center"
         android:textSize="@dimen/titleFontSize"
         android:onClick="payOptions"
         android:text="Next"/>

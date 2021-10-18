@@ -13,4 +13,8 @@
         <item name="android:textSize">8pt</item>
         <item name="android:textStyle">bold</item>
     </style>
+    <style name="cruise_tyle">
+        <item name="android:textSize">13pt</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

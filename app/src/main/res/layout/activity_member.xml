@@ -8,10 +8,11 @@
     android:padding="5pt"
     tools:context=".MembersActivity">
     <TextView
+        android:layout_marginBottom="20px"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="@dimen/titleFontSize"
-        android:text="Please select the number of adults and children"/>
+        android:text="@string/member_description" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,10 +61,12 @@
     </RadioGroup>
 
     <Button
+        android:layout_gravity="center"
         android:id="@+id/members_submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="summary_info"
-        android:text="submit"/>
+        android:textSize="@dimen/titleFontSize"
+        android:text="@string/btn_submit"/>
 
 </LinearLayout>

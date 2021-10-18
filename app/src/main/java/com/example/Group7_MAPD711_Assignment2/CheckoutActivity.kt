@@ -37,9 +37,9 @@ class CheckoutActivity : AppCompatActivity() {
         findViewById<TextView>(R.id.price_stored).text = price
         findViewById<TextView>(R.id.visiting_places_stored).text = visiting_places
         findViewById<TextView>(R.id.duration_stored).text = duration
-        findViewById<TextView>(R.id.number_adults).text = "number of adults: $numberOfAdults"
-        findViewById<TextView>(R.id.number_children).text = "number of children: $numberOfChildren"
-        findViewById<TextView>(R.id.senior_guest).text = "anyone over the age of 60: $senior_guest"
+        findViewById<TextView>(R.id.number_adults).text = "Number of adults: $numberOfAdults"
+        findViewById<TextView>(R.id.number_children).text = "Number of children: $numberOfChildren"
+        findViewById<TextView>(R.id.senior_guest).text = "Anyone over the age of 60: $senior_guest"
 
     }
     fun payOptions(v:View){

@@ -6,6 +6,8 @@
     tools:context=".BahamasFragment">
 
     <LinearLayout
+        android:layout_marginLeft="30px"
+        android:layout_marginRight="30px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -34,6 +36,7 @@
             android:text="@string/duration_bahamas" />
 
         <ImageView
+            android:layout_marginTop="20px"
             android:layout_height="200dp"
             android:layout_width="wrap_content"
             android:src="@drawable/bahamas"
@@ -41,10 +44,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/descriptionFontSize"
+            style="@style/small_description_style"
             android:layout_margin="10dp"
             android:layout_gravity="center"
-            android:text="Please select cruise the checkbox and continue:"
+            android:text="@string/checkbox_text"
             />
         <CheckBox
             android:layout_width="wrap_content"
