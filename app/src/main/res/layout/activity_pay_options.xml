@@ -5,74 +5,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="5pt"
     tools:context=".PayOptionsActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Payment options:"
-        android:textSize="@dimen/titleFontSize"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Card number:"
-        android:textSize="@dimen/normalFontSize"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="card number"
-        android:inputType="numberDecimal"
-        android:maxLength="8"
-        android:minEms="6"
-        android:lines="2"
-        android:id="@+id/card_number"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Card type:"
-        android:textSize="@dimen/normalFontSize"/>
-    <RadioGroup
-        android:orientation="horizontal"
-        android:layout_height="wrap_content"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:tooltipText="@string/group_information"
-        android:id="@+id/rd_group">
-        <RadioButton
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="cash"
-            android:id="@+id/cash"/>
-        <RadioButton
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="credit card"
-            android:id="@+id/credit_card"/>
-        <RadioButton
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"
-            android:text="debit card"
-            android:id="@+id/debit_card"/>
-    </RadioGroup>
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Expiry date:"
-        android:textSize="@dimen/normalFontSize"/>
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="Expiry date"
-        android:inputType="date"
-        android:lines="2"
-        android:id="@+id/expiry_date"/>
+        android:gravity="center"
+        android:paddingTop="50px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px">
 
-    <Button
-        android:id="@+id/payment"
-        android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/lblPaymentOptions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment options"
+            android:textStyle="bold"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:onClick="payment"
-        android:text="Next"/>
+        android:gravity="center"
+        android:paddingTop="50px"
+        android:paddingLeft="50px"
+        android:paddingRight="50px">
+
+        <RadioGroup
+            android:id="@+id/rdb_payment_options"
+            android:layout_width="match_parent"
+            android:layout_height="128dp" >
+
+            <RadioButton
+                android:id="@+id/rdb_cash"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:onClick="rdbCash_Click" />
+
+            <RadioButton
+                android:id="@+id/rdb_credit_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="rdbCreditCard_Click"
+                android:text="Credit Card" />
+            <EditText
+                android:id="@+id/edit_text_credit_card"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100px"
+                android:paddingTop="5px"
+                android:ems="10"
+                android:inputType="text" />
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_expiry_date"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:layout_marginLeft="100px"
+        android:paddingRight="50px">
+        <TextView
+            android:id="@+id/lblExpiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_pick_expiry_date"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:layout_marginLeft="100px"
+        android:paddingRight="50px">
+        <TextView
+            android:id="@+id/tvExpiryDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--/--/----"
+            android:layout_marginLeft="50px"/>
+        <Button
+            android:id="@+id/btn_change_date"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Date" />
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50px"
+        android:layout_marginLeft="100px"
+        android:paddingRight="50px">
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_marginLeft="20px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="btnNext_Click"
+            android:text="Next" />
+    </LinearLayout>
+
 
 </LinearLayout>
